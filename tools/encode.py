@@ -1,6 +1,6 @@
 import codecs
 
-string = "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"
+
 encoded_string = codecs.encode(string, "31tor"[::-1])
 print(encoded_string)
 
@@ -10,7 +10,7 @@ print(decoded_string)
 
 import bcrypt
 
-password = b"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"
+
 salt = bcrypt.gensalt()
 hashed_password = bcrypt.hashpw(password, salt)
 print(hashed_password)
