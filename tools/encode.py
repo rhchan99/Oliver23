@@ -1,5 +1,5 @@
 import codecs
-
+import string
 
 encoded_string = codecs.encode(string, "31tor"[::-1])
 print(encoded_string)
